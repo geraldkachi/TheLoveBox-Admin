@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body { @apply bg-canvas text-ink antialiased; font-family: "Bricolage Grotesque Variable", ui-sans-serif, system-ui, sans-serif; }
+  :focus-visible { outline: 2px solid #D4258F; outline-offset: 2px; border-radius: 6px; }
+  ::selection { background: #FD66C3; color: #fff; }
+}
+
+@layer components {
+  .input { @apply w-full rounded-xl border border-line bg-white px-3.5 py-2.5 text-[14.5px] text-ink outline-none transition placeholder:text-ink-muted/70 focus:border-ribbon-600 focus:ring-4 focus:ring-ribbon-400/15 disabled:bg-canvas; }
+  .input-error { @apply border-red-400 focus:border-red-500 focus:ring-red-100; }
+  .label { @apply mb-1.5 block text-[13.5px] font-medium text-ink; }
+  .card { @apply rounded-2xl border border-line bg-white shadow-card; }
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
