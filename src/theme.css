@@ -1,0 +1,58 @@
+/* ==========================================================================
+   THE LOVE BOX — BRAND THEME
+   --------------------------------------------------------------------------
+   This is the ONLY file you need to edit to change the site's colours.
+   Values are R G B (space-separated, no commas) so Tailwind opacity works,
+   e.g. bg-primary-600/20.
+
+   Default: Burgundy + Champagne gold.
+   Want the original pink back? Swap in the "PINK PRESET" block at the bottom
+   (and use /brand/logo-*-pink.png in index.html + components).
+   ========================================================================== */
+:root {
+  /* Primary — Burgundy (buttons, links, prices, active states) */
+  --primary-50: 251 243 245;
+  --primary-100: 245 228 233;
+  --primary-200: 233 197 206;
+  --primary-300: 214 154 170;
+  --primary-400: 181 86 111;
+  --primary-500: 142 42 69;
+  --primary-600: 122 31 58;   /* main brand colour #7A1F3A */
+  --primary-700: 98 24 48;
+  --primary-800: 74 18 36;
+  --primary-900: 50 12 24;
+
+  /* Accent — Champagne gold (stars, highlights, decorative details) */
+  --gold-50: 251 248 241;
+  --gold-100: 245 238 220;
+  --gold-200: 235 221 184;
+  --gold-300: 220 196 141;
+  --gold-400: 201 169 97;     /* #C9A961 */
+  --gold-500: 176 141 69;
+  --gold-600: 140 110 50;
+
+  /* Cream — soft tinted surfaces (cards, panels, chips) */
+  --cream-50: 252 250 245;
+  --cream-100: 246 240 228;
+  --cream-200: 237 227 207;
+  --cream-300: 224 210 181;
+
+  /* Neutrals */
+  --ink: 36 22 27;
+  --ink-soft: 77 61 67;
+  --ink-muted: 122 107 112;
+  --line: 236 228 216;
+  --leaf: 47 143 91;
+}
+
+/* ---------- PINK PRESET (original logo colours) ----------
+:root {
+  --primary-50: 255 244 250; --primary-100: 255 230 244; --primary-200: 255 204 234; --primary-300: 254 166 220;
+  --primary-400: 253 102 195; --primary-500: 236 69 173; --primary-600: 212 37 143; --primary-700: 169 24 111;
+  --primary-800: 138 23 91; --primary-900: 94 18 64;
+  --gold-50: 255 248 252; --gold-100: 251 234 243; --gold-200: 245 214 230; --gold-300: 254 166 220;
+  --gold-400: 253 102 195; --gold-500: 236 69 173; --gold-600: 212 37 143;
+  --cream-50: 255 248 252; --cream-100: 251 234 243; --cream-200: 245 214 230; --cream-300: 237 191 215;
+  --line: 239 226 234;
+}
+---------------------------------------------------------- */
